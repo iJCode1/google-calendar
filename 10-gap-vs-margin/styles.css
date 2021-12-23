@@ -1,0 +1,48 @@
+body{
+  background-color: rgb(48, 48, 48);
+}
+h2{
+  color: white;
+}
+.grid-container{
+  display: grid;
+  font-size: 1.5rem;
+  grid-template-columns: 200px 600px;
+  grid-template-rows: 80px 400px 70px;
+  grid-template-areas: 
+  "header header"
+  "aside main"
+  "footer footer";
+  /* Se puede aplicar un gap que afectara tanto a el eje principal y transversal (inline / block) (filas / columnas) */
+  gap: 30px;
+
+  /* El gap se puede especificar ya sea a filas o columnas */
+  /* Gap entre filas */
+  row-gap: 10px; 
+  /* Gap entre columnas */
+  column-gap: 60px;
+}
+.grid-item{
+  box-shadow: inset 0 0 0 3px rgb(32, 213, 144);
+  color: white;
+}
+.grid-item:nth-of-type(1){
+  grid-area: header;
+}
+.grid-item:nth-of-type(2){
+  grid-area: aside;
+}
+.grid-item:nth-of-type(3){
+  grid-area: main;
+}
+.grid-item:nth-of-type(4){
+  grid-area: footer;
+  /* 
+    Como no se puede puede especificar un gap para algun apartado en especifico...
+    se puede mezclar el gap definido en este caos para columnas o filas + un margin.
+
+    (ojo) Solo que al colocar un margin, este lo que hara sera restar el tamaño del 
+    margen del tamaño que tenia el track de fila o columna segun corresponda.
+  */
+  margin-block-start: 30px;
+}
