@@ -1,0 +1,17 @@
+body{
+  background-color: rgb(48, 48, 48);
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: 100px 200px 50px;
+  grid-template-rows: 70px 120px 30px;
+}
+.grid-item{
+  box-shadow: inset 0 0 0 2px blueviolet;
+  color: white;
+  counter-increment: item;
+  text-align: center;
+}
+.grid-item::before{
+  content: counter(item);
+}
