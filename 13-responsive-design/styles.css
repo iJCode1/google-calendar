@@ -1,0 +1,26 @@
+body{
+  background-color: rgb(48, 48, 48);
+}
+h2{
+  color: white;
+}
+.grid-container{
+  box-shadow: inset 0 0 0 5px rgb(65, 255, 2);
+  block-size: 100vh;
+  display: grid;
+  font-size: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  max-inline-size: 1024px;
+  margin: 0 auto;
+}
+.grid-item{
+  box-shadow: inset 0 0 0 3px rgba(183, 32, 213, 0.995);
+  color: white;
+  counter-increment: item;
+  text-align: center;
+}
+.grid-item::before{
+  content: counter(item);
+}
