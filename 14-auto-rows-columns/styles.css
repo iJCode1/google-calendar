@@ -1,0 +1,46 @@
+body{
+  background-color: rgb(48, 48, 48);
+}
+h2{
+  color: white;
+}
+.grid-container{
+  box-shadow: inset 0 0 0 5px rgb(65, 255, 2);
+  block-size: 100vh;
+  display: grid;
+  font-size: 1.5rem;
+  /* 
+    En las filas y columnas se puede utilizar una propiedad que defina el tamaño
+    automatico que tendran las filas o columnas que se vayan creando...
+    Recomendado en filas principalmente ya que si se utiliza en colmnas, solo permitiria
+    tener 1 columna del tamaño especificado.
+
+    Para usar esta propiedad, no se debe usar la propiedad de: grid-template-rows|columns.
+  */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* 
+    Para evitar el problema que se tenia de que cuando el alto del viewport era pequeño,
+    la primera fila tomaba un alto mayor al de la segunda fila, para esto
+    se puede utilizar la propiedad: grid-auto-rows: ;
+  */
+  /* grid-template-rows: repeat(auto-fill, minmax(200px, 1fr)); */
+  grid-auto-rows: 200px;
+  /* 
+    Con la propiedad anterior, cada vez que se tenga que crear una nueva fila, se creara 
+    con un tamaño de 200px, asi no se crearan demasiadas cuando el espacio lo permite
+    como pasaba con el valor de auto-fill en la propiedad grid-template-rows
+  */
+
+  gap: 30px;
+  max-inline-size: 1024px;
+  margin: 0 auto;
+}
+.grid-item{
+  box-shadow: inset 0 0 0 3px rgba(183, 32, 213, 0.995);
+  color: white;
+  counter-increment: item;
+  text-align: center;
+}
+.grid-item::before{
+  content: counter(item);
+}
