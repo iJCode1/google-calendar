@@ -1,0 +1,44 @@
+body{
+  background-color: black;
+  color: white;
+}
+.lesson{
+  align-items: start;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 8.75rem 1fr;
+  grid-template-areas: 
+  "thumb title"
+  "description description";
+  gap: .5rem;
+}
+.lesson-thumb{
+  border: 1px solid greenyellow;
+  grid-area: thumb;
+}
+.lesson-thumb img{
+  aspect-ratio: 16/9;
+  block-size: 100%;
+  inline-size: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.lesson-title{
+  border: 1px solid blueviolet;
+  grid-area: title;
+  margin: 0;
+}
+.lesson-description{
+  border: 1px solid yellow;
+  grid-area: description;
+  margin: 0;
+}
+@media screen and (min-width: 768px){
+  .lesson{
+    grid-template-columns: 18.75rem 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    "thumb title"
+    "thumb description";
+  }
+}
