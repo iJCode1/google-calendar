@@ -1,0 +1,53 @@
+body{
+  background-color: rgb(48, 48, 48);
+}
+h2{
+  color: white;
+}
+.grid-container{
+  border: 10px solid green;
+  display: grid;
+  font-size: 1.5rem;
+  /* 
+    Se puede usar el valor de 'fr' para dividir filas y columnas equitativamente.
+    Lo que hara sera tomar de forma fraccionaria el espacio restante o indicado 
+    segun corresponda.
+  */
+  /* 
+    Al especificar el valor de '1fr' lo que hara sera ocupar la primeta columna el espacio
+    sobrante al haber ocupado previamente los 400px que especifica la segunda columna.
+    Seria algo como: 1fr = (100vw - 400px)
+  */
+  grid-template-columns: 1fr 400px;
+  /* 
+    Si se quiere ocupar esta unidad o valor en una fila, el contenedor requiere
+    que previamente tenga un algo (block-size) dedinido para asi poder tomar como
+    fracción el espacio sobrante
+  */
+  block-size: 100vh;
+  grid-template-rows: 80px 1fr 70px;
+  grid-template-areas: 
+  "header header"
+  "aside main"
+  "footer footer";
+  gap: 30px;
+  row-gap: 10px; 
+  column-gap: 60px;
+}
+.grid-item{
+  box-shadow: inset 0 0 0 3px rgb(183, 32, 213);
+  color: white;
+}
+.grid-item:nth-of-type(1){
+  grid-area: header;
+}
+.grid-item:nth-of-type(2){
+  grid-area: aside;
+}
+.grid-item:nth-of-type(3){
+  grid-area: main;
+}
+.grid-item:nth-of-type(4){
+  grid-area: footer;
+  margin-block-start: 30px;
+}
