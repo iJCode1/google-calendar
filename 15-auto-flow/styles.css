@@ -1,0 +1,56 @@
+body{
+  background-color: rgb(48, 48, 48);
+}
+h2{
+  color: white;
+}
+.grid-container{
+  box-shadow: inset 0 0 0 5px rgb(65, 255, 2);
+  block-size: 100vh;
+  display: grid;
+  /* 
+    Se puede especificar el flujo que queremos que siga el grid cuando se van creando nuevos grid-items
+    Para hacer esto se usa la propiedad 'grid-flow' Por defecto se tiene el valor de 'row' lo cual hace 
+    que los nuevos grid-items se posicionen a la derecha.
+    Pero puede ser cambiado el valor a 'column', lo cual los nuevos elementos se posicionarian en la misma
+    columa (creando nuevas filas).
+  */
+  /* 
+    Cuando se ocupa la propiedad 'grid-auto-flow:' con el valor de 'column' se le puede añadir adicionalmente
+    otro valor el cual es 'dense' lo que hara que si se modifican los tamaños de algun 'grid-item' no deforme
+    el grid, es decir que los elementos no tomen su flujo normal si no que utilicen los huecos que quedan vacios.
+  */
+  grid-auto-flow: column dense;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  /* grid-auto-rows: 200px; */
+  gap: 30px;
+  max-inline-size: 1024px;
+  margin: 0 auto;
+}
+.grid-item{
+  align-items: center;
+  box-shadow: inset 0 0 0 3px rgba(183, 32, 213, 0.995);
+  color: white;
+  counter-increment: item;
+  display: flex;
+  font-size: 4rem;
+  justify-content: center;
+}
+.grid-item::before{
+  content: counter(item);
+}
+.grid-item:nth-child(4){
+  box-shadow: 0 0 0 3px greenyellow;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.grid-item:nth-child(7){
+  box-shadow: 0 0 0 3px red;
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
