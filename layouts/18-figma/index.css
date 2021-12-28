@@ -1,0 +1,80 @@
+html{
+  font-family: 'Raleway', "Roboto", sans-serif;
+}
+input[id="list"]:checked ~ .project-list{
+  border: 1px solid red;
+}
+input[id="grid"]:checked ~ .project-list{
+  border: 1px solid blue;
+}
+input[id="list"]:checked ~ .project-actions [for="list"],
+input[id="grid"]:checked ~ .project-actions [for="grid"]{
+  background-color: #C84B31;
+  color: white;
+}
+input[type="radio"]{
+  display: none;
+}
+label{
+  border: 1px solid rgb(150, 138, 138);
+  cursor: pointer;
+  padding-block-start: 1rem;
+  padding-block-end: 1rem;
+  padding-inline-end: .5rem;
+  padding-inline-start: .5rem;
+  user-select: none;
+}
+.project-actions{
+  display: flex;
+  justify-content: flex-end;
+}
+/* ------------ Vista de Lista ------------ */
+input[id="list"]:checked ~ .project-list .project{
+  border: 1px solid red;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 50px 1fr 100px 100px;
+  gap: 1rem;
+  padding: 1rem;
+}
+input[id="list"]:checked ~ .project-list .project .project-image{
+  block-size: 50px;
+  inline-size: 50px;
+  object-fit: cover;
+}
+/* ------------ Vista de Grid ------------ */
+input[id="grid"]:checked ~ .project-list{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+input[id="grid"]:checked ~ .project-list .project{
+  border: 1px solid magenta;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 200px repeat(2, auto);
+  grid-template-areas: 
+  "img img"
+  "name time1"
+  "name time2";
+  align-items: center;
+  overflow: hidden;
+}
+input[id="grid"]:checked ~ .project-list .project .project-image{
+  grid-area: img;
+  border: 1px solid green;
+  block-size: 100%;
+  inline-size: 100%;
+  object-fit: cover;
+}
+input[id="grid"]:checked ~ .project-list .project .project-name{
+  grid-area: name;
+  margin: 0;
+}
+input[id="grid"]:checked ~ .project-list .project time:nth-of-type(1){
+  grid-area: time1;
+}
+input[id="grid"]:checked ~ .project-list .project time:nth-of-type(2){
+  grid-area: time2;
+}
