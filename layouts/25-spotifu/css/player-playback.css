@@ -1,0 +1,14 @@
+.playerPlayback{
+  align-items: center;
+  display: flex;
+  gap: .5rem;
+}
+.playerPlayback-progressTime{
+  font: var(--smallFont);
+}
+.playerPlayback-slider{
+  /* flex: 1; */
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}

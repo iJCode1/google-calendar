@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="preload" href="./css/fonts.css" as="font">
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Spotifu es un clon de la aplicación web de Spotify">
+  <meta property="og:title" content="Spotifu" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ijcode1.github.io/Spotifu/"/>
+  <meta property="og:image" content="https://raw.githubusercontent.com/iJCode1/Spotifu/main/assets/images/spotifu-webp" loading="lazyage.png" />
+  <meta property="og:description" content="Spotifu es un clon de la aplicación web de Spotify" />
+  <title>iJCode - Spotifu</title>
+</head>
+<body class="body">
+  <div class="layout">
+    <aside class="sidebar" aria-label="Sidebar">
+      <header class="logo">
+        <a href="./index.html">
+          <img class="logo-image" src="./assets/images/spotifu-logo.webp" loading="lazy" width="112" height="32"
+            alt="Logo de la marca Spotifu"></img>
+        </a>
+      </header>
+      <nav class="menu" aria-label="Principal">
+        <ul class="menu-list">
+          <li class="menuItem">
+            <a href="./index.html" class="link" aria-current="page">
+              <i class="icon-home" aria-hidden="true"></i>
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li class="menuItem is-active">
+            <a href="./index.html" class="link">
+              <i class="icon-search" aria-hidden="true"></i>
+              <span>Buscar</span>
+            </a>
+          </li>
+          <li class="menuItem">
+            <a href="./index.html" class="link">
+              <i class="icon-creditCard" aria-hidden="true"></i>
+              <span>Premium</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="list" aria-labelledby="library-navigation">
+        <h2 class="list-title" id="library-navigation">tu biblioteca</h2>
+        <ul class="list-content">
+          <li class="list-item">
+            <a href="#" class="link">Creada para ti</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="link">Escuchado recientemente</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="link">Tus Me Gusta</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="list" aria-labelledby="playlist-navigation">
+        <h2 class="list-title" id="playlist-navigation">playlist</h2>
+        <ul class="list-content">
+          <li class="list-item">
+            <span class="ellipsis">
+              <a href="./vista-lista.html" class="link">Tu Top de canciones del 2021</a>
+            </span>
+          </li>
+          <li class="list-item">
+            <a href="./vista-lista.html" class="link">This is Carla Morrison</a>
+          </li>
+          <li class="list-item">
+            <a href="./vista-lista.html" class="link">My Indie &#60;3</a>
+          </li>
+          <li class="list-item">
+            <a href="./vista-lista.html" class="link">Lofi for Study Time</a>
+          </li>
+          <li class="list-item">
+            <a href="./vista-lista.html" class="link">Electronica 💜</a>
+          </li>
+          <li class="list-item">
+            <a href="./vista-lista.html" class="link">This is Sia</a>
+          </li>
+          <li class="list-item">
+            <a href="./vista-lista.html" class="link">Videojuegos instrumental</a>
+          </li>
+          <li class="list-item">
+            <a href="./vista-lista.html" class="link">This is Ximena Sariñana</a>
+          </li>
+          <li class="list-item">
+            <a href="./vista-lista.html" class="link">This is Morat</a>
+          </li>
+          <li class="list-item">
+            <a href="./vista-lista.html" class="link">SCHIZEIN | BSO</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="page">
+      <div class="sticky">
+        <div class="page-block">
+          <header class="header" aria-label="Barra superior y menú del usuario">
+            <div class="navigation">
+              <button class="navigation-prev" aria-label="Volver" title="Volver">
+                <i class="icon-arrowLeft" aria-hidden="true"></i>
+              </button>
+              <button class="navigation-next" aria-label="Avanzar" title="Avanzar" disabled>
+                <i class="icon-arrowRight" aria-hidden="true"></i>
+              </button>
+            </div>
+            <form class="search" role="search" aria-label="Buscar por Artistas, canciones o podcast">
+              <i class="icon-search" aria-hidden="true"></i>
+              <input type="search" placeholder="Artistas, canciones o podcast">
+            </form>
+          </header>
+        </div>
+      </div>
+      <main class="page-block">
+        <section class="playlist" aria-label="Playlist This is Carla Morrison">
+          <div class="playlistTop">
+            <div class="playlist-image">
+              <img src="./assets/images/cover-carla.webp" loading="lazy" alt="Cover de la playlist This is Carla Morrison" title="Cover de la playlist This is Carla Morrison" width="230" height="230">
+            </div>
+            <div class="playlist-details">
+              <p class="playlist-description">playlist</p>
+              <h2 class="playlist-title">This is Carla Morrison</h4>
+              <p class="playlist-about">Sumérgete en el mundo de Carla Morrison.</p>
+            </div>
+          </div>
+          <div class="playlist-container">
+            <div class="playlist-control">
+              <button class="buttonIcon is-primary" aria-label="Reproducir Playlist This is Carla Morrison">
+                <i class="icon-play" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="playlist-songs">
+              <div class="playlist-concept">
+                <div class="concept-title">
+                  <p class="concept-symbol">#</p>
+                  <p class="concept-titleTwo">Titulo</p>
+                </div>
+                <p class="concept-album">Album</p>
+                <p class="concept-agregado">Agregado el</p>
+                <i class="icon-clock concept-clock"></i>
+              </div>
+              <div class="playlist-song">
+                <div class="song">
+                  <div class="song-details">
+                    <p class="song-number">1</p>
+                    <div class="song-cover">
+                      <img src="./assets/images/cover-eresTu2.webp" alt="Cover de la canción Tú Atacas - Carla Morrison" title="Cover de la canción Tú Atacas - Carla Morrison" width="40" height="40">
+                      <div class="song-artist">
+                        <p class="song-name">Eres tú</p>
+                        <p class="song-artistName">Carla Morrison</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="concept-album">Déjenme Llorar</p>
+                  <p class="concept-agregado">21 de dic. de 2021. 2021</p>
+                  <p class="concept-clock">3:48</p>
+                </div>
+                <div class="song">
+                  <div class="song-details">
+                    <p class="song-number">2</p>
+                    <div class="song-cover">
+                      <img src="./assets/images/cover-noMeLlames.webp" alt="Cover de la canción No me Llames - Carla Morrison" title="Cover de la canción No me Llames - Carla Morrison" width="40" height="40">
+                      <div class="song-artist">
+                        <p class="song-name">No Me Llames</p>
+                        <p class="song-artistName">Carla Morrison</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="concept-album">No Me Llames</p>
+                  <p class="concept-agregado">22 de dic. de 2021. 2021</p>
+                  <p class="concept-clock">3:10</p>
+                </div>
+                <div class="song">
+                  <div class="song-details">
+                    <p class="song-number">3</p>
+                    <div class="song-cover">
+                      <img src="./assets/images/cover-mePuede.webp" alt="Cover de la canción Me Puede (Verisoón Alterna) - Carla Morrison" title="Cover de la canción Me Puede (Verisoón Alterna) - Carla Morrison" width="40" height="40">
+                      <div class="song-artist">
+                        <p class="song-name">Me Puede</p>
+                        <p class="song-artistName">Carla Morrison</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="concept-album">Déjenme Llorar (Deluxe Edition)</p>
+                  <p class="concept-agregado">23 de dic. de 2021. 2021</p>
+                  <p class="concept-clock">3:56</p>
+                </div>
+                <div class="song">
+                  <div class="song-details">
+                    <p class="song-number">4</p>
+                    <div class="song-cover">
+                      <img src="./assets/images/cover-tuAtacas.webp" alt="Cover de la canción Tú Atacas - Carla Morrison" title="Cover de la canción Tú Atacas - Carla Morrison" width="40" height="40">
+                      <div class="song-artist">
+                        <p class="song-name">Tú Atacas</p>
+                        <p class="song-artistName">Carla Morrison</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="concept-album">Amor Supremo</p>
+                  <p class="concept-agregado">24 de dic. de 2021. 2021</p>
+                  <p class="concept-clock">5:49</p>
+                </div>
+                <div class="song">
+                  <div class="song-details">
+                    <p class="song-number">5</p>
+                    <div class="song-cover">
+                      <img src="./assets/images/cover-eresTu2.webp" alt="Cover de la canción Tú Atacas - Carla Morrison" title="Cover de la canción Tú Atacas - Carla Morrison" width="40" height="40">
+                      <div class="song-artist">
+                        <p class="song-name">Eres tú</p>
+                        <p class="song-artistName">Carla Morrison</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="concept-album">Déjenme Llorar</p>
+                  <p class="concept-agregado">21 de dic. de 2021. 2021</p>
+                  <p class="concept-clock">3:48</p>
+                </div>
+                <div class="song">
+                  <div class="song-details">
+                    <p class="song-number">6</p>
+                    <div class="song-cover">
+                      <img src="./assets/images/cover-noMeLlames.webp" alt="Cover de la canción No me Llames - Carla Morrison" title="Cover de la canción No me Llames - Carla Morrison" width="40" height="40">
+                      <div class="song-artist">
+                        <p class="song-name">No Me Llames</p>
+                        <p class="song-artistName">Carla Morrison</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="concept-album">No Me Llames</p>
+                  <p class="concept-agregado">22 de dic. de 2021. 2021</p>
+                  <p class="concept-clock">3:10</p>
+                </div>
+                <div class="song">
+                  <div class="song-details">
+                    <p class="song-number">7</p>
+                    <div class="song-cover">
+                      <img src="./assets/images/cover-mePuede.webp" alt="Cover de la canción Me Puede (Verisoón Alterna) - Carla Morrison" title="Cover de la canción Me Puede (Verisoón Alterna) - Carla Morrison" width="40" height="40">
+                      <div class="song-artist">
+                        <p class="song-name">Me Puede</p>
+                        <p class="song-artistName">Carla Morrison</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="concept-album">Déjenme Llorar (Deluxe Edition)</p>
+                  <p class="concept-agregado">23 de dic. de 2021. 2021</p>
+                  <p class="concept-clock">3:56</p>
+                </div>
+                <div class="song">
+                  <div class="song-details">
+                    <p class="song-number">8</p>
+                    <div class="song-cover">
+                      <img src="./assets/images/cover-tuAtacas.webp" alt="Cover de la canción Tú Atacas - Carla Morrison" title="Cover de la canción Tú Atacas - Carla Morrison" width="40" height="40">
+                      <div class="song-artist">
+                        <p class="song-name">Tú Atacas</p>
+                        <p class="song-artistName">Carla Morrison</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="concept-album">Amor Supremo</p>
+                  <p class="concept-agregado">24 de dic. de 2021. 2021</p>
+                  <p class="concept-clock">5:49</p>
+                </div>
+                <div class="song">
+                  <div class="song-details">
+                    <p class="song-number">9</p>
+                    <div class="song-cover">
+                      <img src="./assets/images/cover-eresTu2.webp" alt="Cover de la canción Tú Atacas - Carla Morrison" title="Cover de la canción Tú Atacas - Carla Morrison" width="40" height="40">
+                      <div class="song-artist">
+                        <p class="song-name">Eres tú</p>
+                        <p class="song-artistName">Carla Morrison</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="concept-album">Déjenme Llorar</p>
+                  <p class="concept-agregado">21 de dic. de 2021. 2021</p>
+                  <p class="concept-clock">3:48</p>
+                </div>
+                <div class="song">
+                  <div class="song-details">
+                    <p class="song-number">10</p>
+                    <div class="song-cover">
+                      <img src="./assets/images/cover-noMeLlames.webp" alt="Cover de la canción No me Llames - Carla Morrison" title="Cover de la canción No me Llames - Carla Morrison" width="40" height="40">
+                      <div class="song-artist">
+                        <p class="song-name">No Me Llames</p>
+                        <p class="song-artistName">Carla Morrison</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="concept-album">No Me Llames</p>
+                  <p class="concept-agregado">22 de dic. de 2021. 2021</p>
+                  <p class="concept-clock">3:10</p>
+                </div>
+                <div class="song">
+                  <div class="song-details">
+                    <p class="song-number">11</p>
+                    <div class="song-cover">
+                      <img src="./assets/images/cover-mePuede.webp" alt="Cover de la canción Me Puede (Verisoón Alterna) - Carla Morrison" title="Cover de la canción Me Puede (Verisoón Alterna) - Carla Morrison" width="40" height="40">
+                      <div class="song-artist">
+                        <p class="song-name">Me Puede</p>
+                        <p class="song-artistName">Carla Morrison</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="concept-album">Déjenme Llorar (Deluxe Edition)</p>
+                  <p class="concept-agregado">23 de dic. de 2021. 2021</p>
+                  <p class="concept-clock">3:56</p>
+                </div>
+                <div class="song">
+                  <div class="song-details">
+                    <p class="song-number">12</p>
+                    <div class="song-cover">
+                      <img src="./assets/images/cover-tuAtacas.webp" alt="Cover de la canción Tú Atacas - Carla Morrison" title="Cover de la canción Tú Atacas - Carla Morrison" width="40" height="40">
+                      <div class="song-artist">
+                        <p class="song-name">Tú Atacas</p>
+                        <p class="song-artistName">Carla Morrison</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="concept-album">Amor Supremo</p>
+                  <p class="concept-agregado">24 de dic. de 2021. 2021</p>
+                  <p class="concept-clock">5:49</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <div class="player">
+        <div class="player-nowPlaying">
+          <div class="nowPlaying">
+            <div class="nowPlaying-cover">
+              <img src="./assets/images/cover-eresTu2.webp" loading="lazy" alt="Imagen de portada de la canción Eres Tú - Carla Morrison" title="Imagen de portada de la canción Eres Tú - Carla Morrison" width="56" height="56">
+            </div>
+            <div class="nowPlaying-details">
+              <div class="nowPlaying-description">
+                <a href="#" class="nowPlaying-title">Eres Tú</a>
+                <a href="#" class="nowPlaying-artist">Carla Morrison</a>
+              </div>
+              <div class="nowPlaying-actions">
+                <button class="player-control" aria-label="Guardar en tu biblioteca" role="switch" aria-checked="false" title="Guardar en tu biblioteca">
+                  <i class="icon-heart" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="player-playerControls">
+          <div class="playerControls">
+            <div class="playerControls-buttons" aria-label="Controles de reproducción">
+              <button class="buttonIcon" aria-label="Canción anterior" title="Canción anterior">
+                <i class="icon-prev" aria-hidden="true"></i>
+              </button>
+              <button class="buttonIcon is-white" aria-label="Reproducir" title="Reproducir">
+                <i class="icon-play" aria-hidden="true"></i>
+              </button>
+              <button class="buttonIcon" aria-label="Canción siguiente" title="Canción siguiente">
+                <i class="icon-next" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="playerPlayback">
+              <span class="playerPlayback-progressTime">01:07</span>
+              <div class="playerPlayback-slider">
+                <div class="slider">
+                  <div class="slider-progress">
+                    <button class="slider-button" aria-label="Progreso de la canción"></button>
+                  </div>
+                </div>
+              </div>
+              <span class="playerPlayback-progressTime">03:48</span>
+            </div>
+          </div>
+        </div>
+        <div class="player-playerVolume">
+          <div class="playerVolume">
+            <button class="player-control" aria-describedby="volume-icon" aria-label="Silenciar">
+              <i class="icon-volumeUp" id="volume-icon" role="presentation" aria-label="Volumen alto" aria-hidden="true"></i>
+            </button>
+            <div class="playerVolume-slider">
+              <div class="slider">
+                <div class="slider-progress">
+                  <button class="slider-button" aria-label="Progreso de la canción"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

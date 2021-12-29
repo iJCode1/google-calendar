@@ -1,0 +1,17 @@
+.header{
+  align-items: center;
+  /* border: 1px solid red; */
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  display: flex;
+  gap: 1rem;
+  padding-inline-end: 1.5rem;
+  padding-inline-start: 1.5rem;
+  padding-block-end: 1rem;
+  padding-block-start: 1rem;
+}
+@supports not(-webkit-backdrop-filter: blur(7px)){
+  .header{
+    background: rgba(0, 0, 0, .6);
+  }
+}

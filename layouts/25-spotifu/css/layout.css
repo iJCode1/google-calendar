@@ -1,0 +1,26 @@
+:root{
+  --sidebarInlineSize: 15rem;
+  --minBlockSize: 37.5rem;
+  --minInlineSize: 48rem;
+  --bottomSize: 5.6rem;
+}
+.layout{
+  /* box-shadow: inset 0 0 0 5px red; */
+  min-inline-size: var(--minInlineSize);
+  display: grid;
+  grid-template-columns: var(--sidebarInlineSize) 1fr;
+  grid-template-rows: 1fr var(--bottomSize);
+  grid-template-areas: 
+  "sidebar content"
+  "player player";
+  block-size: 100vh;
+}
+.layout .sidebar{
+  grid-area: sidebar;
+}
+.layout .page{
+  grid-area: content;
+}
+.layout footer{
+  grid-area: player;
+}

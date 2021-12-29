@@ -1,0 +1,11 @@
+.flex{
+  display: flex;
+  gap: 1rem;
+}
+.flex p{
+  align-self: center;
+  flex: 1;
+}
+.flex img{
+  inline-size: 300px;
+}

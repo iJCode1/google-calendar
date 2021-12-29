@@ -1,0 +1,5 @@
+.flexWrap{
+  display: flex;
+  flex-flow: row-reverse wrap-reverse;
+  justify-content: space-between;
+}

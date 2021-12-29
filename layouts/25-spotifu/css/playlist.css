@@ -1,0 +1,87 @@
+@import './song.css';
+:root{
+  --symbol: 1.875rem;
+  --title: 14.3125rem;
+  --album: 21.75rem;
+  --agregado: 21.75rem;
+  --clock: 5rem;
+}
+.playlistTop{
+  display: flex;
+  gap: .625rem;
+  inline-size: 100%;
+  padding-block-end: 1.5rem;
+}
+.playlist-image img{
+  block-size: 14.375rem;
+  inline-size: 14.375rem;
+  vertical-align: middle;
+}
+.playlist-details{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  justify-content: flex-end;
+}
+.playlist-description{
+  color: var(--white);
+  font: var(--smallFont);
+  margin: 0;
+  text-transform: uppercase;
+}
+.playlist-title{
+  color: var(--white);
+  font: var(--headline1);
+  margin: 0;
+}
+.playlist-about{
+  color: var(--white);
+  font: var(--smallFont);
+  margin: 0;
+}
+.playlist-container{
+  /* padding-block-end: 1.5rem; */
+  padding-block-start: 1.5rem;
+}
+.playlist-control{
+  margin-block-end: 1rem;
+}
+.playlist-concept{
+  align-items: center;
+  border-block-end: 1px solid var(--gray10);
+  display: flex;
+  justify-content: space-between;
+  padding-inline-end: .625rem;
+  padding-inline-start: .625rem;
+  scroll-padding-block-end: .5rem;
+  scroll-padding-block-start: .5rem;
+}
+.playlist-concept p{
+  color: var(--white);
+  font: var(--smallFont);
+  text-transform: uppercase;
+}
+.concept-symbol{
+  inline-size: var(--symbol);
+  text-align: center;
+}
+.concept-titleTwo{
+  inline-size: var(--title);
+}
+.concept-album{
+  inline-size: var(--album);
+}
+.concept-agregado{
+  inline-size: var(--agregado);
+}
+.concept-clock{
+  inline-size: var(--clock);
+  text-align: center;
+}
+.playlist-concept .icon-clock{
+  font-size: 1.125rem;
+}
+.concept-title{
+  display: flex;
+  gap: 1rem;
+}

@@ -1,0 +1,8 @@
+.playerVolume{
+    align-items: center;
+    display: flex;
+}
+.playerVolume-slider{
+    flex: 1;
+    inline-size: 6rem;
+}

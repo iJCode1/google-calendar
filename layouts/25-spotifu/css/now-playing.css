@@ -1,0 +1,40 @@
+.nowPlaying{
+  align-items: center;
+  display: flex;
+  gap: .5rem;
+}
+.nowPlaying-cover img{
+  block-size: 3.5rem;
+  inline-size: 3.5rem;
+  vertical-align: middle;
+}
+.nowPlaying-details{
+  display: flex;
+  gap: 1.5rem;
+}
+.nowPlaying-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.nowPlaying-title{
+  color: var(--white);
+  font: var(--baseFontBold);
+}
+.nowPlaying-artist{
+  color: var(--gray10);
+  font: var(--smallFont);
+}
+.nowPlaying-title,
+.nowPlaying-artist{
+  text-decoration: none;
+}
+.icon-heart{
+  cursor: pointer;
+  font-size: 1rem;
+}
+.nowPlaying-title:hover,
+.nowPlaying-artist:hover{
+  text-decoration: underline;
+}

@@ -1,0 +1,15 @@
+@import './logo.css';
+@import './list.css';
+@import './menu.css';
+.sidebar{
+  background-color: var(--gray60);
+  box-sizing: border-box;
+  /* block-size: inherit; */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-block-start: 1.5rem;
+  padding-block-end: 1.5rem;
+  /* inline-size: 200px; */
+  overflow: auto;
+}

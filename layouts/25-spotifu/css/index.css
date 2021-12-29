@@ -1,0 +1,41 @@
+@import './icons.css';
+/* @import './fonts.css'; */
+@import './body.css';
+@import './link.css';
+@import './button-icon.css';
+@import './sidebar.css';
+@import './ellipsis.css';
+@import './player.css';
+@import './page.css';
+@import './layout.css';
+@import './scrollbar.css';
+@import './playlist.css';
+:root{
+  font-size: 14px;
+  --primary: #00B050;
+  --white: #FFFFFF;
+  --gray10: #B3B3B3;
+  --gray20: #737373;
+  --gray30: #282828;
+  --gray40: #181818;
+  --gray50: #121212;
+  --gray60: #000000;
+  --baseFontFamily: "Avenir", sans-serif;
+  /* font: font-weight font-size / line-height font-family */
+  --headline1: bold 2rem / 2.731875rem var(--baseFontFamily);
+  --headline2: bold 1.5rem / 1.75rem var(--baseFontFamily);
+  --baseFont: normal 0.875rem / 1.375rem var(--baseFontFamily);
+  --baseFontBold: bold 0.875rem / 1.375rem var(--baseFontFamily);
+  --button: normal 0.875rem / 1rem var(--baseFontFamily);
+  --smallFont: normal .75em / normal var(--baseFontFamily);
+}
+@media screen and (min-width: 768px) {
+  :root{
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1367px) {
+  :root{
+    font-size: 18px;
+  }
+}

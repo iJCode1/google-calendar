@@ -1,0 +1,39 @@
+.song:first-of-type{
+  margin-block-start: 1rem;
+}
+.song{
+  display: flex;
+  justify-content: space-between;
+  padding-inline-end: .625rem;
+  padding-inline-start: .625rem;
+  padding-block-end: .5rem;
+  padding-block-start: .5rem;
+}
+.song-details{
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+.song-number{
+  inline-size: var(--symbol);
+  margin: 0;
+  text-align: center;
+}
+.song-cover{
+  display: flex;
+  inline-size: var(--title);
+}
+.song-cover img{
+  vertical-align: middle;
+}
+.song-artist{
+  display: flex;
+  flex-direction: column;
+  margin-inline-start: .5rem;
+}
+.song-artist p{
+  margin: 0;
+}
+.song-name{
+  color: var(--white);
+}
