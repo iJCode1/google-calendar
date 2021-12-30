@@ -1,0 +1,21 @@
+.timezoneCell{
+  font: var(--body3-regular);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: sticky;
+  inset-block-start: 0;
+  white-space: nowrap;
+  padding-inline-end: 1rem;
+  background-color: var(--white);
+  z-index: 5;
+}
+.timezoneCell::after{
+  content: '';
+  inline-size: .5rem;
+  block-size: 1px;
+  background-color: var(--gray20);
+  position: absolute;
+  inset-inline-end: 0;
+  inset-block-end: 0;
+}
