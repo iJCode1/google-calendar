@@ -1,5 +1,5 @@
 .page{
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   display: grid;
   grid-template-columns: 15.25rem 1fr;
   grid-template-rows: 6rem 1fr;
