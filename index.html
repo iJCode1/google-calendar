@@ -13,21 +13,37 @@
 <body>
   <div class="page">
     <header class="header">
-      <select class="select">
-        <option value="" selected>Semana</option>
-        <option value="">Día</option>
-      </select>
-      <button class="button is-rounded is-shadowed">
-        <i class="icon-plus"></i>
-        <span>button</span>
-      </button>
-      <button class="button is-compact">
-        <i class="icon-plus"></i>
-      </button>
-      <button class="button">button</button>
-      <a href="#" class="button">button</a>
-      <a href="#" class="button is-primary">button</a>
-      <a href="#" class="button is-secondary">Hoy</a>
+      <div class="header-primary">
+        <div class="header-logo">
+          <button class="button is-compact">
+            <i class="icon-hamburguerButton"></i>
+          </button>
+          <a href="./index.html" aria-current="page" aria-label="Calendar" tabindex="-1">
+            <img src="./image/logo.png" alt="Logo del proyecto">
+          </a>
+        </div>
+        <div class="calendarStatus">
+          <button class="button is-secondary">Hoy</button>
+          <span class="calendarStatus-navigation">
+            <a href="#" class="button is-compact" aria-label="Semana anterior">
+              <i class="icon-chevronLeft" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="button is-compact" aria-label="Siguiente semana">
+              <i class="icon-chevronRight" aria-hidden="true"></i>
+            </a>
+          </span>
+          <time datetime="03-01-2022" class="calendarStatus-date">Enero 2022</time>
+        </div>
+      </div>
+      <div class="header-secondary">
+        <select class="select">
+          <option value="" selected>Semana</option>
+          <option value="">Día</option>
+        </select>
+        <a href="#">
+          <img src="./image/user.png" alt="Imagen del usuario">
+        </a>
+      </div>
     </header>
     <div class="sidebar"></div>
     <main class="calendar">

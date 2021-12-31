@@ -9,7 +9,6 @@
   block-size: 100vh;
 }
 .page .header{
-  border: 10px solid red;
   grid-area: header;
 }
 .page .sidebar{
