@@ -3,14 +3,16 @@
 @import './calendar-day.css';
 @import './timezone-cell.css';
 @import './hour-cell.css';
+@import './current-time.css';
 .calendar{
   color: var(--gray20);
   --minBlockSize: 4rem;
   --maxBlockSize: auto;
   --minInlinesize: 5rem;
-  --maxInlinesize: 10rem;
+  --maxInlinesize: 1fr;
   padding-inline-end: 1.5rem;
   padding-inline-start: 1.5rem;
+  position: relative;
 }
 .calendar-week{
   display: grid;
