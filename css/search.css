@@ -1,0 +1,15 @@
+.search{
+  margin-block-end: 1.5rem;
+}
+.search-button{
+  color: var(--gray20);
+  background-color: var(--gray10);
+  --max-inline-size: 12.25rem;
+  max-inline-size: var(--max-inline-size);
+  inline-size: 100%;
+  text-align: start;
+}
+.search-button i{
+  font-size: 1rem;
+  margin-inline-end: .25rem;
+}

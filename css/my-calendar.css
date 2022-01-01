@@ -1,0 +1,29 @@
+.myCalendar{
+  --max-inlineSize: 12.25rem;
+  max-inline-size: var(--max-inlineSize);
+  inline-size: 100%;
+}
+.myCalendar-primary{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-end: .5rem;
+}
+.myCalendar-title{
+  font: var(--body1-medium);
+  margin: 0;
+}
+.myCalendar-secondary{
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+.myCalendar-item{
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+}
+.myCalendar-item p{
+  font: var(--body1-regular);
+  margin: 0;
+}
