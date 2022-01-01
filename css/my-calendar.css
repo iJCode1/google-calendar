@@ -1,7 +1,7 @@
 .myCalendar{
   --max-inlineSize: 12.25rem;
   max-inline-size: var(--max-inlineSize);
-  inline-size: 100%;
+  inline-size: var(--max-inlineSize);
 }
 .myCalendar-primary{
   display: flex;
