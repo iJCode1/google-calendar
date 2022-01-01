@@ -10,3 +10,8 @@
   font-size: 1rem;
   margin-inline-end: .25rem;
 }
+@media screen and (prefers-color-scheme: dark){
+  .search-button{
+    color: var(--gray30);
+  }
+}

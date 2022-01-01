@@ -25,3 +25,8 @@
   justify-content: flex-end;
   gap: 1rem;
 }
+@media screen and (prefers-color-scheme: dark){
+  .modal-actions .button.is-primary{
+    color: var(--gray10);
+  }
+}

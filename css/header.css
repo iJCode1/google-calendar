@@ -16,8 +16,15 @@
   align-items: center;
   gap: .5rem;
 }
-.header-logo a img{
+.header-logo a i{
   vertical-align: middle;
+  /* border: 1px solid red; */
+  display: inline-block;
+  background-image: url('../image/logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: 3rem;
+  inline-size: 10.25rem;
 }
 .header-secondary{
   display: flex;
@@ -26,4 +33,9 @@
 }
 .header-secondary a img{
   vertical-align: middle;
+}
+@media screen and (prefers-color-scheme: dark){
+  .header-logo a i{
+    background-image: url('../image/logo-dark.png');
+  }
 }

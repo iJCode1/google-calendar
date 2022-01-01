@@ -12,3 +12,8 @@
   font-size: small;
   box-shadow: 0 0 10px rgba(0,0,0,.3);
 }
+@media screen and (prefers-color-scheme: dark){
+  .taskCell.is-active::before{
+    color: var(--gray30);
+  }
+}
