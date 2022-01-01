@@ -1,0 +1,40 @@
+.input{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.input-body{
+  display: flex;
+  flex: 1;
+}
+.input.is-outstanding input{
+  font: var(--subtitle-subtitle1);
+}
+.input input,
+.input textarea{
+  flex: 1;
+  font: var(--body1-regular);
+  padding-block-start: .625rem;
+  padding-block-end: .625rem;
+  padding-inline-end: .75rem;
+  padding-inline-start: .75rem;
+  border: none;
+  border-radius: .25rem;
+  outline: none;
+}
+.input i{
+  font-size: 1.5rem;
+}
+.input input:focus,
+.input input:hover,
+.input textarea:hover,
+.input textarea:focus{
+  background-color: var(--gray10);
+}
+.input input:focus,
+.input textarea:focus{
+  box-shadow: 0 2px 0 var(--blue10);
+}
+.input textarea{
+  resize: none;
+}

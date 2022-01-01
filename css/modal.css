@@ -10,6 +10,10 @@
   position: absolute;
   inset-block-start: 0;
   inset-inline-start: 0;
+  padding-block-start: 1.5rem;
+  padding-block-end: 1.5rem;
+  padding-inline-end: 3rem;
+  padding-inline-start: 3rem;
 }
 .modal::backdrop{
   background: rgba(0,0,0,.3);

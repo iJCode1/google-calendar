@@ -426,8 +426,52 @@
     </main>
   </div>
   <dialog class="modal">
-    <form>
-      form
+    <form class="createTask">
+      <div class="input is-outstanding">
+        <div class="input-body">
+          <input type="text" name="title" required placeholder="Añade un titulo">
+        </div>
+      </div>
+      <div class="input">
+        <i class="icon-clock"></i>
+        <div class="input-body">
+          <input type="date" name="date" required>
+          <input type="time" name="time-start" required>
+          <input type="time" name="time-end" required>
+        </div>
+      </div>
+      <div class="input">
+        <i class="icon-users"></i>
+        <div class="input-body">
+          <input type="text" list="guests" name="guests" placeholder="Agregar Invitados">
+          <datalist id="guests">
+            <option value="Leonidas"></option>
+            <option value="Joel"></option>
+            <option value="Cristopher"></option>
+            <option value="Sandra"></option>
+            <option value="Miguel"></option>
+            <option value="Carlos"></option>
+          </datalist>
+        </div>
+      </div>
+      <div class="input">
+        <i class="icon-gps"></i>
+        <div class="input-body">
+          <input type="text" placeholder="Agregar ubicación" name="location">
+        </div>
+      </div>
+      <div class="input">
+        <i class="icon-text"></i>
+        <div class="input-body">
+          <input type="file" multiple>
+        </div>
+      </div>
+      <div class="input">
+        <i class="icon-text"></i>
+        <div class="input-body">
+          <textarea name="description" placeholder="Agregar descripción" cols="40" rows="2"></textarea>
+        </div>
+      </div>
     </form>
     <div class="modal-actions">
       <button class="button">Cancelar</button>
