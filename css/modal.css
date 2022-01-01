@@ -1,5 +1,4 @@
 .modal{
-  display: flex;
   flex-direction: column;
   gap: 1.5rem;
   max-inline-size: 28rem;
@@ -15,10 +14,14 @@
   padding-inline-end: 3rem;
   padding-inline-start: 3rem;
 }
+.modal[open]{
+  display: flex;
+}
 .modal::backdrop{
   background: rgba(0,0,0,.3);
 }
 .modal-actions{
   display: flex;
   justify-content: flex-end;
+  gap: 1rem;
 }
