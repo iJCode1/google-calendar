@@ -1,0 +1,33 @@
+.calendarDayContainer{
+  /* border: 1px solid red; */
+  --minBlockSize: 4rem;
+  --maxBlockSize: auto;
+  --minInlinesize: 5rem;
+  --maxInlinesize: 1fr;
+}
+.calendar-byDay{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 5.5rem repeat(24, minmax(var(--minBlockSize), var(--maxBlockSize)));
+}
+.calendarDay2{
+  /* grid-column-start: 2;
+  grid-column-end: -1; */
+  /* justify-self: start; */
+  text-align: left;
+}
+.calendarDay2:before{
+  block-size: 1rem;
+}
+.calendarDay2 span{
+  display: inline-block;
+  inline-size: 2.75rem;
+  text-align: center;
+}
+.task.is-secondaryTask{
+  background-color: var(--blue20);
+}
+.currentTime2{
+  max-inline-size: 70%;
+  inline-size: 80%;
+}
