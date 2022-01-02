@@ -53,4 +53,8 @@
   .calendarDay.is-selected span:nth-of-type(2) {
     color: var(--gray10);
   }
+  .calendarDay a:hover span:nth-of-type(2),
+  .calendarDay a:focus span:nth-of-type(2){
+    background: var(--gray30);
+  }
 }

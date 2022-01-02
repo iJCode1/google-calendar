@@ -63,10 +63,23 @@
   .button.is-rounded{
     background-color: var(--gray50);
   }
+  .button.is-rounded i,
   .button i{
     color: var(--white);
   }
   .button.is-shadowed{
     box-shadow: 1.0719px 30.9815px 92px rgba(255, 255, 255, 0.027), 0.412881px 11.9336px 29.3037px rgba(255, 255, 255, 0.043), 0.0873403px 2.52442px 7.4963px rgba(255, 255, 255, 0.07);
+  }
+  .button.is-secondary:hover,
+  .button.is-secondary:focus,
+  .button.is-compact:hover,
+  .button.is-compact:focus{
+    background-color: var(--gray30);
+  }
+  .button.is-compact{
+    background-color: rgb(208 208 208 / 24%);
+  }
+  .button.is-compact i{
+    color: var(--gray50);
   }
 }
